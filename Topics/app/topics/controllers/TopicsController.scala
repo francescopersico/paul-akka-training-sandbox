@@ -17,7 +17,7 @@ class TopicsController extends Controller {
 
   implicit val timeout = Timeout(5.seconds)
 
-  // curl -D -H 'Content-Type: application/json' -X POST -d '{"type":"test.Test","message":"test-payload"}' http://localhost:9002/topics/Test/append
+  // curl -H 'Content-Type: application/json' -X POST -d '{"type":"test.Test","message":"test-payload"}' http://localhost:9002/topics/Test
   
   def append(topic: String) = Action.async { request =>
     val message = request.body.asJson.get.toString
