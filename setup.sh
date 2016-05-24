@@ -2,6 +2,9 @@
 
 cd tmp
 
+# install jdk8
+sudo apt-get install openjdk-8-jdk
+
 # install sbt from http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html
 wget https://dl.bintray.com/sbt/debian/sbt-0.13.11.deb
 sudo dpkg -i sbt-0.13.11.deb
