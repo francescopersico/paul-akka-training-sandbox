@@ -18,3 +18,6 @@ curl -X GET http://localhost:9003/testing
 cd ../AgilePM; sbt "run 9004" &
 sleep 5
 curl -i -H 'Content-Type: application/json' -X POST -d '{"name":"Product1","description":"This is product 1.", "requestDiscussion":true}' http://localhost:9004/agilepm/products
+
+cd ../IssueTracker; sbt "run 9005" &
+sleep 5
